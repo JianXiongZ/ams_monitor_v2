@@ -13,7 +13,7 @@ y = []
 
 def request_data(farm):
     info = []
-    url = "https://monitor.makai.moe/miao/" + quote(farm) + ".csv"
+    url = "http://192.168.1.200:8888/miao/" + quote(farm) + ".csv"
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 
     data = urlopen(req).read().decode('ascii', 'ignore')
